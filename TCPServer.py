@@ -41,3 +41,6 @@ def mainRun():
     client.close() # สั่ง client ให้ปิด
 
 
+
+if __name__=="__main__":
+    mainRun()
