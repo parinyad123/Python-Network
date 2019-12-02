@@ -2,7 +2,7 @@ import socket
 
 def mainRun():
     host="127.0.0.1"
-    port=5000
+    port=20001
 
     server=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     server.bind((host,port))
@@ -12,10 +12,10 @@ def mainRun():
     print("Start Server")
 
     while True:
-        data,addr=server.recv(1024) # รับข้อมมูลมาจาก client
+        data,addr=server.recvfrom(1024) # รับข้อมมูลมาจาก client
         data=data.decode('utf-8') # เปลี่ยน data จาก binary ให้กลายเป็น string
         print("Message From Client : "+data)
-        data=data.upper()
+        data=str(data.upper())
         print("Convert String : "+data)
 
         # ส่งข้อความไปหา client
