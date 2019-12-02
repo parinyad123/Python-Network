@@ -32,7 +32,7 @@ def mainRun():
         if not data:
             break # ถ้าไม่มี data ให้ออกจาก loop
         
-        print("Message From Client :"+data)
+        print("Message From Client : "+data)
 
         # ส่งข้อมูลไปหา Client
         data=str(data.upper()) # ถ้า client ส่งข้อมูลเป็นตัวพิมพ์เล็ก จะแปลงเป็นตัวพิมพ์ใหญ่และส่งไปให้ client
