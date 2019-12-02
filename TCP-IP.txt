@@ -1,0 +1,3 @@
+การติดต่อสื่อสาร จะใช้ Socket เพื่อสร้าง link ในการเชื่อมต่อ process ในฝั่ง server กับ client
+
+เวลา run ให้ run ฝั่ง server ก่อน แล้วค่อย run client
